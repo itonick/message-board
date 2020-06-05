@@ -99,6 +99,7 @@ class MessagesController extends Controller
         ]);
         
         $message=Message::findOrFail($id);
+        $message->title=$request->title;
         $message->content=$request->content;
         
         $message->save();
