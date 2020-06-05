@@ -24,6 +24,8 @@
         </table>
     @endif
     
+    {{ $messages->links() }}
+    
     {!! link_to_route('messages.create', '新規メッセージの投稿', [], ['class' => 'btn btn-primary']) !!}
     
 @endsection
